@@ -56,7 +56,7 @@ const Login = () => {
                         <button className=" text-gray-400 absolute inset-y-0 right-2 flex items-center" onClick={() => setShowPassword(!showPassword)}><i className={showPassword ? "fa-solid fa-eye-slash" : "fa-regular fa-eye"}></i></button>
                     </div>
                 </div>
-                {error && (<p role='alert' className='rounded-lg bg-red-50 p-3 text-sm text-red-600'>{error}</p>)}
+                {error && (<p role='alert' className='rounded-lg bg-red-50 p-3 text-sm text-red-600 mb-3'>{error}</p>)}
 
                 <button type='submit' disabled={loading} className="w-full rounded-lg bg-violet-600 py-3 font-semibold text-white transition hover:bg-violet-700
                     disabled:opacity-60" onClick={handleLogin}>{loading ? "Logging in..." : "Login"}</button>
