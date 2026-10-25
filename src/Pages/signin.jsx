@@ -91,15 +91,15 @@ const Signup = () => {
                             <button className=" text-gray-400 absolute inset-y-0 right-2 flex items-center" onClick={() => setShowCPassword(!showCPassword)}><i className={showCPassword ? "fa-solid fa-eye-slash" : "fa-regular fa-eye"}></i></button>
                         </div></div>
                     {error && (
-                        <p role="alert" className="rounded-lg bg-red-50 p-3 text-sm text-red-600">{error}</p>
+                        <p role="alert" className="rounded-lg mt-2 bg-red-50 p-3 text-sm text-red-600">{error}</p>
                     )}
                     {message && (
-                        <p role="status" className="rounded-lg bg-green-50 p-3 text-sm text-green-700">{message}</p>
+                        <p role="status" className="rounded-lg mt-2 bg-green-50 p-3 text-sm text-green-700">{message}</p>
                     )}
-                    <button onClick={handleSignup} disabled={loading} className="w-full rounded-lg bg-orange-500 py-3 font-semibold text-white transition hover:bg-orange-600
+                    <button onClick={handleSignup} disabled={loading} className="w-full mt-2 rounded-lg bg-orange-500 py-3 font-semibold text-white transition hover:bg-orange-600
                     disabled:opacity-60">{loading ? "Creating account..." : "Sign Up"}</button>
                     <p className="mt-6 text-center text-sm text-gray-600">Already have an account? <Link to={'/'} className="
-                    font-semibold text-orange-600 underline hover:text-orange-800">Login</Link></p>
+                    font-semibold text-orange-600 underline hover:text-orange-800 mt-2">Login</Link></p>
                 </div>
             </div>
         </div>
