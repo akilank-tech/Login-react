@@ -34,9 +34,9 @@ const Login = () => {
     return (
         <div className="h-[100dvh] min-h-0 w-full overflow-hidden bg-gradient-to-br
          from-violet-100 via-white to-purple-200 flex items-center justify-center p-6 sm:p-7">
-            <div className='w-full max-w-md rounded-2xl bg-white p-4 sm:p-10 shadow-xl'>
+            <div className='w-full max-w-md rounded-2xl bg-white px-4 py-12 sm:px-10 sm:py-15 shadow-xl'>
                 <div className='text-center mb-6 sm:mb-8'>
-                    <div className='mx-auto mb-4 flex h-10 sm:h-14 w-10 sm:h-14 items-center justify-center rounded-2xl bg-violet-600 text-2xl font-bold text-white'>A</div>
+                    <div className='mx-auto mb-4 flex h-10 sm:h-14 w-10 sm:w-14 items-center justify-center rounded-2xl bg-violet-600 text-2xl font-bold text-white'>A</div>
                     <h1 className='text-2xl sm:text-3xl font-bold text-violet-900'>Welcome Back!</h1>
                     <p className='mt-1 sm:mt2 text-sm text-gray-500'>Login to your account.</p>
                 </div>
@@ -45,7 +45,8 @@ const Login = () => {
                     <label className='mb-2 block text-xs sm:text-sm font-medium text-gray-700'>Email Address</label>
                     <input name="useremail" value={email} onChange={(e) => setEmail(e.target.value)} type="email" placeholder="Entrer your email"
                         autoComplete='email'
-                        className="w-full text-xs sm:text-base rounded-lg border border-gray-300 px-2 py-1 sm:px-4 sm:py-3 outline-none 
+                        className="w-full text-xs sm:text-base rounded-lg border border-gray-300 
+                        px-2 py-2 sm:px-4 sm:py-3 outline-none 
                         transition focus:border-violet-600
                     focus:ring-2 focus:ring-violet-200"/>
                 </div>
@@ -54,7 +55,7 @@ const Login = () => {
                     <div className="relative mb-5 ">
                         <input onChange={(e) => setPassword(e.target.value)} type={showPassword ? "password" : "text"}
                             value={password} required placeholder=" Enter your password" autoComplete='current-password' 
-                            className=" text-xs sm:text-base w-full sm:px-4 sm:py-3 px-2 py-1 rounded-lg border border-gray-300  outline-none focus:border-violet-600 focus:ring-2
+                            className=" text-xs sm:text-base w-full sm:px-4 sm:py-3 px-2 py-2 rounded-lg border border-gray-300  outline-none focus:border-violet-600 focus:ring-2
                         focus:ring-violet-200" />
                         <button className=" text-gray-400 text-xs sm:text-base absolute inset-y-0 right-2 flex items-center" onClick={() => setShowPassword(!showPassword)}>
                             <i className={showPassword ? "fa-solid fa-eye-slash" : "fa-regular fa-eye"}></i></button>
