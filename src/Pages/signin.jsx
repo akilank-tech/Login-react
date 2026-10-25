@@ -57,7 +57,7 @@ const Signup = () => {
     return (
         <div className="h-[100dvh] min-h-0 w-full overflow-hidden bg-gradient-to-br from-amber-100
          via-white to-orange-200 flex items-center justify-center p-3 sm:p-4">
-            <div className="w-full max-w-md rounded-2xl bg-white p-6 sm:p-10 shadow-xl">
+            <div className="w-full max-w-md rounded-2xl bg-white p-4 sm:p-10 shadow-xl">
                 <div className="mb-8 text-center">
                     <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-orange-500 text-2xl font-bold text-white">
                         A
