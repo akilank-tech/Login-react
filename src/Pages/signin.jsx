@@ -19,7 +19,7 @@ const Signup = () => {
             setError("All fields are required")
             return
         }
-        if (password.length < 6) {
+        if (password.length < 4) {
             setError("passwords do not match")
             return
         }
@@ -29,7 +29,7 @@ const Signup = () => {
         }
         try {
             setLoading(true)
-            const response = await axios.post("http://localhost:5000/signup",
+            const response = await axios.post("http://localhost:5000/signin",
                 {
                     useremail: email.trim(),
                     userpassword: password
@@ -46,6 +46,8 @@ const Signup = () => {
                 }, 1000)
             }
         } catch (err) {
+            console.log("Signup Error:",err)
+            console.log("Error Response:",err.response?.data)
             setError(err.response?.data?.message || "Unable to connect to the server")
         } finally {
             setLoading(false)
@@ -82,7 +84,7 @@ const Signup = () => {
                     <div>
                         <label className="mb-2 block text-sm font-medium text-gray-700">Confirm Password</label>
                         <div className="relative">
-                            <input onChange={(e) => setcPassword(e.target.value)} type={showCPassword ? "password" : "text"} required placeholder="Confirm your password"
+                            <input value={cpassword} onChange={(e) => setcPassword(e.target.value)} type={showCPassword ? "password" : "text"} required placeholder="Confirm your password"
                                 autoComplete="new-password"
                                 className="w-full rounded-lg border border-gray-300 px-4 py-3 outline-none focus:border-orange-500
                      focus:ring-2 focus:ring-orange-100" />
