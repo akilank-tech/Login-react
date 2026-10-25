@@ -34,7 +34,7 @@ const Login = () => {
     return (
         <div className="h-[100dvh] min-h-0 w-full overflow-hidden bg-gradient-to-br
          from-violet-100 via-white to-purple-200 flex items-center justify-center p-6 sm:p-7">
-            <div className='w-full max-w-md rounded-2xl bg-white px-4 py-12 sm:px-10 sm:py-15 shadow-xl'>
+            <div className='w-full max-w-md rounded-2xl bg-white px-4 py-15 sm:px-10 sm:py-18 shadow-xl'>
                 <div className='text-center mb-6 sm:mb-8'>
                     <div className='mx-auto mb-4 flex h-10 sm:h-14 w-10 sm:w-14 items-center justify-center rounded-2xl bg-violet-600 text-2xl font-bold text-white'>A</div>
                     <h1 className='text-2xl sm:text-3xl font-bold text-violet-900'>Welcome Back!</h1>
