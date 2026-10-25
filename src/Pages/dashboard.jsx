@@ -10,15 +10,16 @@ const DashBoard=()=>{
         navigate("/")
     }
     return(
-        <div className="min-h-screen bg-gradient-to-br from-violet-100 via-white to-purple-200
+        <div className="h-[100dvh] bg-gradient-to-br from-violet-100 via-white to-purple-200
         flex items-center justify-center p-4">
-            <div className="w-full max-w-lg rounded-2xl bg-white p-6 sm:p-10 text-center shadow-xl">
+            <div className="w-full max-w-lg max-h-full overflow-y-auto overscroll-contain rounded-2xl
+             bg-white p-4 sm:p-10 text-center shadow-xl">
                 <div className="mb-4 text-5xl">🎉</div>
                 <h1 className="text-3xl font-bold text-violet-900 sm:text-4xl">Login Successful!</h1>
                 <p className="mt-3 text-gray-600">Welcome to your Test Page.</p>
                 <div className="my-6 overflow-hidden rounded-xl bg-violet-50 p-3">
                     <img src="https://picsum.photos/id/1015/600/350" alt="Beautiful mountain landscape"
-                    className="h-52 w-full rounded-lg object-cover sm:h-64" />
+                    className="h-40 w-full rounded-lg object-cover sm:h-64" />
                     <h2 className="mt-4 text-xl font-semibold text-violet-900">Your Test Image</h2>
                     <p className="mt-2 text-sm text-gray-600">
                         Your email and password were verified by the backend.</p>
